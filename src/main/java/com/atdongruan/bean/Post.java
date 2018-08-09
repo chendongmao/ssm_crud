@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class Post extends PostKey {
     private String pTitle;
-
+//我修改代码了
     private Integer pClick;
 
-    private Date pTime;
+    private Date   pTime;
 
     private String pContent;
 
