@@ -3,13 +3,25 @@ package com.atdongruan.bean;
 import java.util.Date;
 
 public class Post extends PostKey {
+
     private String pTitle;
-//我修改代码了
+
     private Integer pClick;
 
     private Date   pTime;
 
     private String pContent;
+
+    private Integer puId;
+
+    public Integer getPuId() {
+        return puId;
+    }
+
+
+    public void setPuId(Integer puId) {
+        this.puId = puId;
+    }
 
     public String getpTitle() {
         return pTitle;

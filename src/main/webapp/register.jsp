@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2018/8/7 0007
-  Time: 上午 2:19
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -17,7 +11,7 @@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //Meta-Tags -->
 
-    <!-- Style --> <link rel="stylesheet" href="css/style1.css" type="text/css" media="all">
+    <!-- Style --> <link rel="stylesheet" href="static/css/style1.css" type="text/css" media="all">
 </head>
 <body>
 <h1>注册</h1>

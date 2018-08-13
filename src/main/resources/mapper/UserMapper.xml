@@ -70,6 +70,13 @@
   <sql id="Base_Column_List">
     u_id, u_password, u_email, u_mopile, u_name, U-_image
   </sql>
+  <!--登录的sql语句-->
+  <select id="findByUsername" resultMap="BaseResultMap" parameterType="java.lang.String">
+
+    select *
+     from user where u_name = #{username}
+
+  </select>
   <select id="selectByExample" parameterType="com.atdongruan.bean.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

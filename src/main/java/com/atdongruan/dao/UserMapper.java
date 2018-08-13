@@ -15,6 +15,8 @@ public interface UserMapper {
     int insert(User record);
 
     int insertSelective(User record);
+     //用户登录
+     User findByUsername(String username);
 
     List<User> selectByExample(UserExample example);
 
