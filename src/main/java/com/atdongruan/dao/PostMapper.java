@@ -11,7 +11,7 @@ public interface PostMapper {
 
     int deleteByExample(PostExample example);
 
-    int deleteByPrimaryKey(PostKey key);
+    int  deleteByPrimaryKey(PostKey key);
 
     int insert(Post record);
 

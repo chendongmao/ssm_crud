@@ -222,11 +222,7 @@
                         <h1>到这里111</h1>
                         br
                     </div>
-
-                    <div>br
-                        <h1>到这里222</h1>
-                        br
-                    </div>
+                    <a  href="${pageContext.request.contextPath}/searchPost" >我的帖子</a>
 
                     <div>br
                         <h1>到这里444</h1>
@@ -278,17 +274,14 @@
                     <div>br
                         <h1>到这里111</h1>
                         br
-                    </div>
-
-                    <div>br
-                        <h1>到这里222</h1>
-                        br
-                    </div>
 
                     <div>br
                         <h1>到这里444</h1>
                         br
                     </div>
+
+
+
                 </div>
             </div>
         </div>

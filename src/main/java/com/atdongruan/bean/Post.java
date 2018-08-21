@@ -6,14 +6,24 @@ public class Post extends PostKey {
 
     private String pTitle;
 
+
     private Integer pClick;
 
     private Date   pTime;
 
     private String pContent;
 
-    private Integer puId;
 
+
+    private Integer puId;
+    private  Integer pId;
+    public Integer getpId() {
+        return pId;
+    }
+
+    public void setpId(Integer pId) {
+        this.pId = pId;
+    }
     public Integer getPuId() {
         return puId;
     }

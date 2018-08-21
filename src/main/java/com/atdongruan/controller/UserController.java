@@ -1,12 +1,17 @@
 package com.atdongruan.controller;
 
+import com.atdongruan.bean.GetMessageCode;
+import com.atdongruan.bean.ReturnContant;
 import com.atdongruan.bean.User;
 import com.atdongruan.bean.UserExample;
 import com.atdongruan.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -36,8 +41,8 @@ public class UserController {
             System.out.println(userl.getuName()+"+++++"+userl.getuId());
 
         }
-        System.out.println( userl);
-        return "success";
+       System.out.println( userl);
+        return "tex";
     }
 
 
@@ -53,6 +58,26 @@ public class UserController {
     @RequestMapping("/toRegister")
     public String toRegister(){
         return "register";
+    }
+
+
+//手机验证
+@Resource
+private ReturnContant returnContant;
+    /**
+     * 根据获取到的手机号发送验证码
+     * @param request
+     * @param phone 获取的手机号码
+     * @return
+     */
+    @RequestMapping(value="/sendSMS.do",method= RequestMethod.POST)
+    public @ResponseBody
+    ReturnContant sendSMS(HttpServletRequest request, String phone){
+        //根据获取到的手机号发送验证码
+        String code= GetMessageCode.getCode(phone);
+        returnContant.setStatus(1);
+        returnContant.setData(code);
+        return returnContant;
     }
 
 
